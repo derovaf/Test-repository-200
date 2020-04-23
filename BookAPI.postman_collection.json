@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "534e87d2-f697-4296-89e4-664382b85a91",
+		"name": "BookAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Book",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "My custom agent",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.nytimes.com/svc/books/v3/lists.json?list=hardcover-nonfiction&api-key=V5rXCE8HWyQeRFvVoiy8HmuVyatJpKWE&rank=5&published-date=2020-04-26&rank-last-week=0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nytimes",
+						"com"
+					],
+					"path": [
+						"svc",
+						"books",
+						"v3",
+						"lists.json"
+					],
+					"query": [
+						{
+							"key": "list",
+							"value": "hardcover-nonfiction"
+						},
+						{
+							"key": "api-key",
+							"value": "V5rXCE8HWyQeRFvVoiy8HmuVyatJpKWE"
+						},
+						{
+							"key": "rank",
+							"value": "5"
+						},
+						{
+							"key": "published-date",
+							"value": "2020-04-26"
+						},
+						{
+							"key": "rank-last-week",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Book 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nytimes.com/svc/books/v3/lists.json?api-key=V5rXCE8HWyQeRFvVoiy8HmuVyatJpKWE&list=hardcover-nonfiction&rank-last-week=0&published_date=2020-04-26&rank=5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nytimes",
+						"com"
+					],
+					"path": [
+						"svc",
+						"books",
+						"v3",
+						"lists.json"
+					],
+					"query": [
+						{
+							"key": "api-key",
+							"value": "V5rXCE8HWyQeRFvVoiy8HmuVyatJpKWE"
+						},
+						{
+							"key": "list",
+							"value": "hardcover-nonfiction"
+						},
+						{
+							"key": "rank-last-week",
+							"value": "0"
+						},
+						{
+							"key": "published_date",
+							"value": "2020-04-26"
+						},
+						{
+							"key": "rank",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
